@@ -95,7 +95,7 @@ class lobMailer {
                                                                                                    
                                                                                                    
 
-
+Please follow the prompts to send a letter to your local US House Representative.
 `);
   }
 
@@ -174,9 +174,9 @@ class lobMailer {
 
   _validateAddress(address) {
     addressValidator.validate(address, addressValidator.match.streetAddress, (err, exact, inexact) => {
-      console.log('err: ', err);
-      console.log('exact: ', exact);
-      console.log('inexact: ', inexact);
+      // console.log('err: ', err);
+      // console.log('exact: ', exact);
+      // console.log('inexact: ', inexact);
       if (exact.length === 1) {
         inquirer
           .prompt([
